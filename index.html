@@ -7,6 +7,8 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -28,7 +30,7 @@
     <div class="card">
       <div class="card__header">
         <div class="card__logo-container">
-          <img src="" alt="" class="card__logo">
+          <img src="./images/icon-star.svg" alt="star" class="card__logo">
         </div>
         <h1 class="card__title">How did we do?</h1>
       </div>
@@ -42,24 +44,34 @@
         <form action="" class="card__form">
           <div class="card__input-container">
             <div class="card__input-item">
-              <input type="radio" id="rating_1" name="rating" value="1" />
-              <label for="rating_1">1</label>
+              <label for="rating_1">
+                <input type="radio" id="rating_1" name="rating" value="1" checked/>
+                1
+              </label>
             </div>
             <div class="card__input-item">
-              <input type="radio" id="rating_2" name="rating" value="2" />
-              <label for="rating_2">2</label>
+              <label for="rating_2">
+                <input type="radio" id="rating_2" name="rating" value="2" />
+                2
+              </label>
             </div>
             <div class="card__input-item">
-              <input type="radio" id="rating_3" name="rating" value="3" />
-              <label for="rating_3">3</label>
+              <label for="rating_3">
+                <input type="radio" id="rating_3" name="rating" value="3" />
+                3
+              </label>
             </div>
             <div class="card__input-item">
-              <input type="radio" id="rating_4" name="rating" value="4" />
-              <label for="rating_4">4</label>
+              <label for="rating_4">
+                <input type="radio" id="rating_4" name="rating" value="4" />
+                4
+              </label>
             </div>
             <div class="card__input-item">
-              <input type="radio" id="rating_5" name="rating" value="5" />
-              <label for="rating_5">5</label>
+              <label for="rating_5">
+                <input type="radio" id="rating_5" name="rating" value="5" />
+                5
+              </label>
             </div>
           </div>
           <button type="submit" class="card__button">Submit</button>
