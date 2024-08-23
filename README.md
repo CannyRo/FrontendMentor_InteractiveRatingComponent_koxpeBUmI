@@ -77,7 +77,7 @@ To see how you did, see below:
   line-height: 24px;
   font-weight: 700;
 }
-.labelRadio:hover{
+.label:hover{
   color: #162011;
   background-color: #55ff00;
 }
