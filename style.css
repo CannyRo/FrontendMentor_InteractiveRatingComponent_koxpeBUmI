@@ -62,9 +62,6 @@ body{
     line-height: 22px;
     color: var(--Light-Grey);
 }
-.card__form{
-    /* margin-bottom: 24px; */
-}
 .card__input-container{
     display: flex;
     justify-content: space-between;
@@ -76,11 +73,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 11px 0px 7px 0px;
     width: 42px;
     height: 42px;
     color: var(--Light-Grey);
     background-color: var(--Dark-Blue);
     border-radius: 21px;
+    font-size: 14px;
+    line-height: 24px;
     font-weight: 700;
     transform-origin: center;
     transition: 0.7s;
@@ -104,9 +104,11 @@ input[type="radio"]{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px 0px 11px 0px;
     width: 100%;
     height: 45px;
-    line-height: 100%;
+    font-size: 14px;
+    line-height: 18px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -119,6 +121,43 @@ input[type="radio"]{
 .card__button:hover, .card__button:focus, .card__button:active{
     background-color: var(--White);
 }
+.response{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 34px 24px;
+    text-align: center;
+}
+.response__img{
+    width: 144px;
+}
+.response__content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0px;
+    padding: 7px 12px 4px 12px;
+    width: fit-content;
+    height: 32px;
+    background-color: var(--Dark-Blue);
+    color: var(--Orange);
+    border-radius: 22.5px;
+}
+.response__content-text{
+    font-size: 14px;
+    line-height: 22px;
+}
+.response__thanks{
+    margin-bottom: 17px;
+    font-size: 24px;
+    line-height: 125%;
+    font-weight: 700;
+}
+.response__acknowledgment{
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--Light-Grey);
+}
 footer{
     position: absolute;
     bottom: 0;
@@ -129,4 +168,67 @@ footer{
 }
 .footer__signature a{
     color: var(--Orange);
+}
+.hidden{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .card{
+        padding: 32px;
+        width: 412px;
+        height: 416px;
+        border-radius: 30px;
+    }
+    .card__logo-container{
+        width: 48px;
+        height: 48px;
+    }
+    .card__logo{
+        width: 17px;
+    }
+    .card__title{
+        margin-top: 30px;
+        font-size: 28px;
+    }
+    .card__content-text{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .card__input-container{
+        margin-bottom: 32px;
+    }
+    .labelRadio{
+        width: 51px;
+        height: 51px;
+        border-radius: 25.5px;
+        font-size: 16px;
+    }
+    input[type="radio"]{
+        width: 51px;
+        height: 51px;
+    }
+    .response{
+        padding: 45px 36px;
+    }
+    .response__img{
+        width: 162px;
+    }
+    .response__content-container{
+        margin: 32px 0px;
+        padding: 7px 19px 4px 19px;
+    }
+    .response__content-text{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .response__thanks{
+        margin-bottom: 7px;
+        font-size: 28px;
+        line-height: 43px;
+    }
+    .response__acknowledgment{
+        font-size: 15px;
+        line-height: 24px;
+    }
 }
