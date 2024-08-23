@@ -70,7 +70,7 @@ body{
     justify-content: space-between;
     margin-bottom: 24px;
 }
-label{
+.labelRadio{
     z-index: 1;
     position: relative;
     display: flex;
@@ -82,11 +82,16 @@ label{
     background-color: var(--Dark-Blue);
     border-radius: 21px;
     font-weight: 700;
+    transform-origin: center;
     transition: 0.7s;
 }
-label:hover{
+.labelRadio:hover{
     color: var(--Dark-Blue);
     background-color: var(--Orange);
+}
+.labelChecked{
+    color: var(--Dark-Blue);
+    background-color: var(--White);
 }
 input[type="radio"]{
     position: absolute;

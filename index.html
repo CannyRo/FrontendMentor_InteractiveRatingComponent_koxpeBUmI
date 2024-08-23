@@ -11,18 +11,6 @@
   <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -41,41 +29,41 @@
         </p>
       </div>
       <div class="card__footer">
-        <form action="" class="card__form">
+        <form id="myForm" action="" class="card__form" >
           <div class="card__input-container">
             <div class="card__input-item">
-              <label for="rating_1">
-                <input type="radio" id="rating_1" name="rating" value="1" checked/>
+              <label for="rating_1" class="labelRadio" id="rating_1Label">
+                <input type="radio" id="rating_1" name="rating" value="1" class="inputRadio"/>
                 1
               </label>
             </div>
             <div class="card__input-item">
-              <label for="rating_2">
-                <input type="radio" id="rating_2" name="rating" value="2" />
+              <label for="rating_2" class="labelRadio" id="rating_2Label">
+                <input type="radio" id="rating_2" name="rating" value="2" class="inputRadio"/>
                 2
               </label>
             </div>
             <div class="card__input-item">
-              <label for="rating_3">
-                <input type="radio" id="rating_3" name="rating" value="3" />
+              <label for="rating_3" class="labelRadio" id="rating_3Label">
+                <input type="radio" id="rating_3" name="rating" value="3" class="inputRadio"/>
                 3
               </label>
             </div>
             <div class="card__input-item">
-              <label for="rating_4">
-                <input type="radio" id="rating_4" name="rating" value="4" />
+              <label for="rating_4" class="labelRadio" id="rating_4Label">
+                <input type="radio" id="rating_4" name="rating" value="4" class="inputRadio"/>
                 4
               </label>
             </div>
             <div class="card__input-item">
-              <label for="rating_5">
-                <input type="radio" id="rating_5" name="rating" value="5" />
+              <label for="rating_5" class="labelRadio" id="rating_5Label">
+                <input type="radio" id="rating_5" name="rating" value="5" class="inputRadio"/>
                 5
               </label>
             </div>
           </div>
-          <button type="submit" class="card__button">Submit</button>
         </form>
+        <button type="submit"type="submit" form="myForm" value="Submit" class="card__button" id="submitForm">Submit</button>
       </div>
     </div>
   </main>
@@ -96,6 +84,7 @@
   don’t hesitate to get in touch! -->
 
   <!-- Thank you state end -->
+  <script src="app.js"></script>
 </body>
 
 </html>
