@@ -82,15 +82,17 @@ label{
     background-color: var(--Dark-Blue);
     border-radius: 21px;
     font-weight: 700;
+    transition: 0.7s;
 }
 label:hover{
     color: var(--Dark-Blue);
-    background-color: var(--White);
+    background-color: var(--Orange);
 }
 input[type="radio"]{
     position: absolute;
     width: 42px;
     height: 42px;
+    cursor: pointer;
     opacity: 0;
 }
 .card__button{
@@ -106,6 +108,8 @@ input[type="radio"]{
     background-color: var(--Orange);
     border: none;
     border-radius: 22.5px;
+    cursor: pointer;
+    transition: 0.7s;
 }
 .card__button:hover, .card__button:focus, .card__button:active{
     background-color: var(--White);
