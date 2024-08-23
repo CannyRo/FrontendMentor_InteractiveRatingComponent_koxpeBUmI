@@ -1,10 +1,13 @@
 function app() {
   //Get DOM variables and listener
+  const cardRequest = document.getElementById("cardRequest");
   const formNode = document.getElementById("myForm");
   const labelCollection = document.getElementsByClassName("labelRadio");
   const inputCollection = document.getElementsByClassName("inputRadio");
   const submitButton = document.getElementById("submitForm");
-  let valueSaved = "";
+  const cardResponse = document.getElementById("cardResponse");
+  const insertValue = document.getElementById("insertValue");
+  let valueSaved = '';
   // Load functions sequence
   Init();
   // Functions
@@ -29,6 +32,11 @@ function app() {
     let radioTargeted = document.getElementById(`${id}Label`);
     radioTargeted.classList.add("labelChecked");
   }
+  function affectValue(value){
+    insertValue.textContent = value;
+    cardRequest.classList.add('hidden');
+    cardResponse.classList.remove('hidden');
+  }
   function labelListener() {
     formNode.addEventListener("change", (e) => {
       if (
@@ -40,7 +48,7 @@ function app() {
       ) {
         e.preventDefault();
         //Init the valueSaved
-        valueSaved = "";
+        valueSaved = '';
         // Clear all label
         clearLabelChecked();
         // Color the label where input is checked
@@ -55,14 +63,15 @@ function app() {
   }
   function submitForm(e) {
     e.preventDefault();
-    console.log("submit!!!");
+    console.log('Submit!!!');
     for (const [key, value] of Object.entries(inputCollection)) {
       if (value.checked) {
         valueSaved = value.value;
       }
     }
-    if (!valueSaved == "") {
+    if (!valueSaved == '') {
       console.log(`Value saved : ${valueSaved}.`);
+      affectValue(valueSaved);
     }
   }
 }

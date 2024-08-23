@@ -15,7 +15,7 @@
 
 <body>
   <main>
-    <div class="card">
+    <div class="card" id="cardRequest">
       <div class="card__header">
         <div class="card__logo-container">
           <img src="./images/icon-star.svg" alt="star" class="card__logo">
@@ -69,7 +69,7 @@
     <div class="card response hidden" id="cardResponse">
       <img src="./images/illustration-thank-you.svg" alt="illustration" class="response__img">
       <div class="response__content-container">
-        <p class="response__content-text">You selected <span class="response__content-value"></span> out of 5</p>
+        <p class="response__content-text">You selected <span id="insertValue" class="response__content-value"></span> out of 5</p>
       </div>
       <h2 class="response__thanks">Thank you!</h2>
       <p class="response__acknowledgment">We appreciate you taking the time to give a rating. If you ever need more support, 
@@ -82,17 +82,6 @@
       <p>Coded by <a href="https://cannyro.github.io/hire_mr_canny/en">WhatCannyDev</a>.</p>
     </div>
   </footer>
-
-  <!-- Thank you state start -->
-
-  <!-- You selected (##Add rating here##)  out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
   <script src="app.js"></script>
 </body>
 
